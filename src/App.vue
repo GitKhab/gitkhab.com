@@ -17,6 +17,7 @@
 
 <style lang="scss">
   @import "~@/assets/fonts/roboto/roboto.css";
+  @import "~@/assets/sass/variables.scss";
 
   html {
     height: 100%;
@@ -28,6 +29,7 @@
     margin: 0;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     line-height: 1.15;
+    background-color: $main-dark;
   }
 
   #app {

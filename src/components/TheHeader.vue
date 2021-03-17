@@ -18,5 +18,6 @@
   .header__inner {
     max-width: $inner-max-width;
     margin: 0 auto;
+    padding: 20px 16px;
   }
 </style>

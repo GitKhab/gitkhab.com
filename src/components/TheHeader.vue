@@ -18,6 +18,7 @@
 
 <style lang="scss">
   @import "~@/assets/sass/variables.scss";
+  @import "~@/assets/sass/mixins.scss";
 
   .header {}
 
@@ -28,10 +29,10 @@
   }
 
   .header__link {
+    @include text-color-transition;
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    transition: color 0.15s;
     &:hover {
       color: rgba(#fff, 0.75);
     }

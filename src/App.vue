@@ -16,6 +16,8 @@
 </script>
 
 <style lang="scss">
+  @import "~@/assets/fonts/roboto/roboto.css";
+
   html {
     height: 100%;
   }
@@ -24,7 +26,7 @@
     height: inherit;
     min-width: 320px;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     line-height: 1.15;
   }
 

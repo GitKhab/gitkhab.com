@@ -2,15 +2,17 @@
   <main class="home">
     <div class="home__inner">
       <Cv/>
+      <Photo/>
     </div>
   </main>
 </template>
 
 <script>
   import Cv from "@/components/Cv";
+  import Photo from "@/components/Photo";
   export default {
     name: "Home",
-    components: {Cv}
+    components: {Photo, Cv}
   }
 </script>
 

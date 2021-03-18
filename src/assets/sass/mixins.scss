@@ -1,3 +1,13 @@
 @mixin text-color-transition {
   transition: color 0.15s;
 }
+
+@mixin square-ratio {
+  width: 100%;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+}

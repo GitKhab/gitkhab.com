@@ -1,12 +1,16 @@
 <template>
   <main class="home">
-    <div class="home__inner"></div>
+    <div class="home__inner">
+      <Cv/>
+    </div>
   </main>
 </template>
 
 <script>
+  import Cv from "@/components/Cv";
   export default {
-    name: "Home"
+    name: "Home",
+    components: {Cv}
   }
 </script>
 

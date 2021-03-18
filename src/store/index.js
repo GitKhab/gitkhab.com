@@ -8,6 +8,12 @@ export default new Vuex.Store({
     domain: {
       sld: 'GitKhab',
       tld: 'com'
+    },
+    cv: {
+      positions: [
+        { position: 'html-верстальщик' },
+        { position: 'junior frontend-разработчик' }
+      ]
     }
   },
   mutations: {

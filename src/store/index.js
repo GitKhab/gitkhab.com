@@ -5,6 +5,10 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    domain: {
+      sld: 'GitKhab',
+      tld: 'com'
+    }
   },
   mutations: {
   },

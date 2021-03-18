@@ -1,13 +1,21 @@
 <template>
   <div class="logo">
-    <span class="logo__sld">GitKhab</span>
-    <span class="logo__tld">.com</span>
+    <span class="logo__sld">{{ sld }}</span>
+    <span class="logo__tld">.{{ tld }}</span>
   </div>
 </template>
 
 <script>
   export default {
-    name: "Logo"
+    name: "Logo",
+    computed: {
+      sld () {
+        return this.$store.state.domain.sld;
+      },
+      tld () {
+        return this.$store.state.domain.tld;
+      }
+    }
   }
 </script>
 

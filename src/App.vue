@@ -28,7 +28,7 @@
     min-width: 320px;
     margin: 0;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    line-height: 1.15;
+    line-height: 1.4;
     background-color: $main-dark;
   }
 

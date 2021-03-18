@@ -1,11 +1,27 @@
 <template>
-  <TheMain>*main (home)*</TheMain>
+  <main class="home">
+    <div class="home__inner"></div>
+  </main>
 </template>
 
 <script>
-  import TheMain from "@/components/TheMain";
   export default {
-    name: "Home",
-    components: {TheMain}
+    name: "Home"
   }
 </script>
+
+<style lang="scss" scoped>
+  @import "~@/assets/sass/variables.scss";
+
+  .home {
+    background-image: url(~@/assets/svg/circuit-board.svg);
+    background-position: 10px 10px;
+    background-color: $main-light;
+  }
+
+  .home__inner {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px 16px;
+  }
+</style>

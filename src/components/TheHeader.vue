@@ -17,13 +17,12 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
   @import "~@/assets/sass/mixins.scss";
 
   .header {}
 
   .header__inner {
-    max-width: $inner-max-width;
+    max-width: 768px;
     margin: 0 auto;
     padding: 20px 16px;
   }

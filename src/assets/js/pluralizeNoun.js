@@ -20,7 +20,7 @@
  * @returns {string} - Подходящая форма существительного
  */
 
-export function pluralizeNoun(number, one, two, five) {
+export default function pluralizeNoun(number, one, two, five) {
     number = Math.abs(number);
     number %= 100;
     if (number >= 5 && number <= 20) {

@@ -7,30 +7,29 @@
       </div>
       <div class="photo__item">
         <div class="photo__image photo__image_back"></div>
-        <div class="photo__caption">{{ personFullName }}, {{ getPersonAge() }} {{ pluralizeYear(getPersonAge()) }}</div>
+        <div class="photo__caption">{{ personFullName }}, {{ personAge }} {{ pluralizeYear(personAge) }}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import {getAge} from "@/assets/js/getAge";
-  import {pluralizeNoun} from "@/assets/js/pluralizeNoun";
+  import pluralizeNoun from "@/assets/js/pluralizeNoun";
 
   export default {
     name: "Photo",
     computed: {
-      personFullName () {
-        return (this.$store.state.person.lastName + ' ' + this.$store.state.person.firstName);
+      personFullName() {
+        return this.$store.getters.getPersonFullName;
+      },
+      personAge() {
+        return this.$store.getters.getPersonAge;
       }
     },
     methods: {
-      getPersonAge: function () {
-        return getAge(this.$store.state.person.birthday);
-      },
-      pluralizeYear: function (years) {
+      pluralizeYear(years) {
         return pluralizeNoun(years, 'год', 'года', 'лет');
-      },
+      }
     }
   }
 </script>

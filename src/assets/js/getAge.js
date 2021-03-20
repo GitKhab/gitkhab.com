@@ -13,7 +13,7 @@
  * @returns {number} age - Полное количество лет на данный момент
  */
 
-export function getAge(birthday) {
+export default function getAge(birthday) {
     birthday = new Date(birthday);
     let birthYear = birthday.getFullYear();
 

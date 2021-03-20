@@ -5,6 +5,10 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    person: {
+      firstName: 'Василь',
+      lastName: 'Хабибуллин'
+    },
     domain: {
       sld: 'GitKhab',
       tld: 'com'

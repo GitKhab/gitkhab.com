@@ -7,7 +7,7 @@
       </div>
       <div class="photo__item">
         <div class="photo__image photo__image_back"></div>
-        <div class="photo__caption">Фамилия Имя, возраст</div>
+        <div class="photo__caption">{{ personFullName }}, возраст</div>
       </div>
     </div>
   </div>
@@ -15,7 +15,12 @@
 
 <script>
   export default {
-    name: "Photo"
+    name: "Photo",
+    computed: {
+      personFullName () {
+        return (this.$store.state.person.lastName + ' ' + this.$store.state.person.firstName);
+      }
+    }
   }
 </script>
 

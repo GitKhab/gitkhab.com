@@ -7,7 +7,8 @@ export default new Vuex.Store({
   state: {
     person: {
       firstName: 'Василь',
-      lastName: 'Хабибуллин'
+      lastName: 'Хабибуллин',
+      birthday: '1995-09-11'
     },
     domain: {
       sld: 'GitKhab',

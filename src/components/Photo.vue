@@ -7,18 +7,25 @@
       </div>
       <div class="photo__item">
         <div class="photo__image photo__image_back"></div>
-        <div class="photo__caption">{{ personFullName }}, возраст</div>
+        <div class="photo__caption">{{ personFullName }}, {{ getPersonAge() }}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import {getAge} from "@/assets/js/getAge";
+
   export default {
     name: "Photo",
     computed: {
       personFullName () {
         return (this.$store.state.person.lastName + ' ' + this.$store.state.person.firstName);
+      }
+    },
+    methods: {
+      getPersonAge: function () {
+        return getAge(this.$store.state.person.birthday);
       }
     }
   }

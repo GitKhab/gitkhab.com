@@ -1,5 +1,5 @@
 <template>
-  <div class="cv">
+  <section class="cv">
     <h1 class="cv__title">Резюме</h1>
     <p class="cv__positions">
       <template v-for="(item, index) in positions">
@@ -7,15 +7,18 @@
         <span class="cv__separator" v-if="index < positions.length - 1" :key="item.separator"> / </span>
       </template>
     </p>
-  </div>
+  </section>
 </template>
 
 <script>
   export default {
     name: "Cv",
-    computed: {
-      positions () {
-        return this.$store.state.cv.positions;
+    data() {
+      return {
+        positions: [
+          { position: 'html-верстальщик' },
+          { position: 'junior frontend-разработчик' }
+        ]
       }
     }
   }

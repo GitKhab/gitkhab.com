@@ -74,7 +74,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 1.8vmax;
+    border-radius: 12px;
     &_front {
       background-color: $main-dark;
       box-shadow: 10px 10px 10px -12px $main-dark;

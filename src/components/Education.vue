@@ -51,7 +51,7 @@
 
   .education__title {
     margin: 0 0 12px 0;
-    font-size: $font-size-xxl;
+    font-size: $font-size-xl;
     font-weight: 500;
     color: #fff;
   }

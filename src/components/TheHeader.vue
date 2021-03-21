@@ -23,9 +23,7 @@
   .header {}
 
   .header__inner {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 20px 16px;
+    @include inner-behavior;
   }
 
   .header__link {

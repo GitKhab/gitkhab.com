@@ -11,3 +11,13 @@
     padding-bottom: 100%;
   }
 }
+
+@mixin inner-behavior {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 16px;
+  @media screen and (min-width: 640px) {
+    max-width: 768px;
+    padding: 20px 32px;
+  }
+}

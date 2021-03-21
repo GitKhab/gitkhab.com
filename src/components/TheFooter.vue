@@ -11,11 +11,11 @@
 </script>
 
 <style lang="scss">
+  @import "~@/assets/sass/mixins.scss";
+
   .footer {}
 
   .footer__inner {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 20px 16px;
+    @include inner-behavior;
   }
 </style>

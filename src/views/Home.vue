@@ -21,6 +21,7 @@
 
 <style lang="scss" scoped>
   @import "~@/assets/sass/variables.scss";
+  @import "~@/assets/sass/mixins.scss";
 
   .home {
     background-image: url(~@/assets/svg/circuit-board.svg);
@@ -29,15 +30,14 @@
   }
 
   .home__inner {
+    @include inner-behavior;
+    max-width: 420px;
     display: grid;
     grid-template-areas:
         'cv'
         'photo'
         'education';
     grid-gap: 32px;
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 20px 16px;
   }
 
   .home__cv {
@@ -54,11 +54,11 @@
 
   @media screen and (min-width: 640px) {
     .home__inner {
+      max-width: 768px;
       grid-template-areas:
         'cv cv'
         'photo education';
       grid-template-columns: minmax(auto, 335px) 1fr;
-      max-width: 768px;
     }
   }
 </style>

@@ -4,6 +4,7 @@
       <Cv class="home__cv"/>
       <Photo class="home__photo"/>
       <Education class="home__education"/>
+      <Subjects class="home__subjects"/>
     </div>
   </main>
 </template>
@@ -12,10 +13,11 @@
   import Cv from "@/components/Cv";
   import Photo from "@/components/Photo";
   import Education from "@/components/Education";
+  import Subjects from "@/components/Subjects";
 
   export default {
     name: "Home",
-    components: {Education, Photo, Cv}
+    components: {Subjects, Education, Photo, Cv}
   }
 </script>
 
@@ -36,7 +38,8 @@
     grid-template-areas:
         'cv'
         'photo'
-        'education';
+        'education'
+        'subjects';
     grid-gap: 32px;
   }
 
@@ -52,12 +55,17 @@
     grid-area: education;
   }
 
+  .home__subjects {
+    grid-area: subjects;
+  }
+
   @media screen and (min-width: 640px) {
     .home__inner {
       max-width: 768px;
       grid-template-areas:
         'cv cv'
-        'photo education';
+        'photo education'
+        'subjects subjects';
       grid-template-columns: minmax(310px, 1fr) 1fr;
     }
 

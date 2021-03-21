@@ -35,7 +35,7 @@
         'photo'
         'education';
     grid-gap: 32px;
-    max-width: 768px;
+    max-width: 420px;
     margin: 0 auto;
     padding: 20px 16px;
   }
@@ -58,6 +58,7 @@
         'cv cv'
         'photo education';
       grid-template-columns: minmax(auto, 335px) 1fr;
+      max-width: 768px;
     }
   }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <main class="home">
     <div class="home__inner">
-      <Cv/>
-      <Photo/>
-      <Education/>
+      <Cv class="home__cv"/>
+      <Photo class="home__photo"/>
+      <Education class="home__education"/>
     </div>
   </main>
 </template>
@@ -29,8 +29,35 @@
   }
 
   .home__inner {
+    display: grid;
+    grid-template-areas:
+        'cv'
+        'photo'
+        'education';
+    grid-gap: 32px;
     max-width: 768px;
     margin: 0 auto;
     padding: 20px 16px;
+  }
+
+  .home__cv {
+    grid-area: cv;
+  }
+
+  .home__photo {
+    grid-area: photo;
+  }
+
+  .home__education {
+    grid-area: education;
+  }
+
+  @media screen and (min-width: 640px) {
+    .home__inner {
+      grid-template-areas:
+        'cv cv'
+        'photo education';
+      grid-template-columns: minmax(auto, 335px) 1fr;
+    }
   }
 </style>

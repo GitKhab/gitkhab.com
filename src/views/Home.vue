@@ -58,7 +58,11 @@
       grid-template-areas:
         'cv cv'
         'photo education';
-      grid-template-columns: minmax(auto, 335px) 1fr;
+      grid-template-columns: minmax(310px, 1fr) 1fr;
+    }
+
+    .home__education {
+      margin-left: auto;
     }
   }
 </style>

@@ -12,6 +12,7 @@
   import Cv from "@/components/Cv";
   import Photo from "@/components/Photo";
   import Education from "@/components/Education";
+
   export default {
     name: "Home",
     components: {Education, Photo, Cv}

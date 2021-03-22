@@ -3,7 +3,7 @@
     <h1 class="skills__title">Навыки</h1>
     <Tabs>
       <Tab name="HTML" :selected="true">
-        <div >Навыки (HTML)</div>
+        <div>Навыки (HTML)</div>
       </Tab>
       <Tab name="CSS">
         <div>Навыки (CSS)</div>

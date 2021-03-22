@@ -1,7 +1,8 @@
 <template>
   <div class="tabs">
     <div class="tabs__header">
-      <button v-for="tab in tabs"
+      <button class="tabs__tab"
+              v-for="tab in tabs"
               :key="tab.name"
               @click="selectTab(tab)">{{ tab.name }}</button>
     </div>

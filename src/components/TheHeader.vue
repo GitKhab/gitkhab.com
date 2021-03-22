@@ -28,6 +28,7 @@
 
   .header__link {
     @include text-color-transition;
+    @include focus-visible(#fff, 5px);
     display: inline-block;
     text-decoration: none;
     color: #fff;

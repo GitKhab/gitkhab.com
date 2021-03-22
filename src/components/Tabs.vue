@@ -36,6 +36,7 @@
 
 <style lang="scss">
   @import "~@/assets/sass/variables.scss";
+  @import "~@/assets/sass/mixins.scss";
 
   $tabs-border-radius: 8px;
 
@@ -49,6 +50,7 @@
   }
 
   .tabs__tab {
+    @include focus-visible($gray-dark, -5px);
     padding: 16px 8px;
     font-family: $fonts-default;
     font-size: $font-size-m;

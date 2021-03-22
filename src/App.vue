@@ -28,7 +28,7 @@
     height: inherit;
     min-width: 320px;
     margin: 0;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: $fonts-default;
     line-height: 1.4;
     background-color: $main-dark;
   }

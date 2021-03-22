@@ -50,7 +50,7 @@
 
   .tabs__tab {
     padding: 16px 8px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: $fonts-default;
     font-size: $font-size-m;
     font-weight: 700;
     background-color: transparent;

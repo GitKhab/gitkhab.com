@@ -6,6 +6,7 @@
       <Education class="home__education"/>
       <Subjects class="home__subjects"/>
       <Skills class="home__skills"/>
+      <Expectations class="home__expectations"/>
     </div>
   </main>
 </template>
@@ -16,10 +17,11 @@
   import Education from "@/components/Education";
   import Subjects from "@/components/Subjects";
   import Skills from "@/components/Skills";
+  import Expectations from "@/components/Expectations";
 
   export default {
     name: "Home",
-    components: {Skills, Subjects, Education, Photo, Cv}
+    components: {Expectations, Skills, Subjects, Education, Photo, Cv}
   }
 </script>
 
@@ -42,7 +44,8 @@
         'photo'
         'education'
         'subjects'
-        'skills';
+        'skills'
+        'expectations';
     grid-gap: 32px;
   }
 
@@ -66,6 +69,10 @@
     grid-area: skills;
   }
 
+  .home__expectations {
+    grid-area: expectations;
+  }
+
   @media screen and (min-width: 640px) {
     .home__inner {
       max-width: 768px;
@@ -73,7 +80,8 @@
         'cv cv'
         'photo education'
         'subjects subjects'
-        'skills skills';
+        'skills skills'
+        'expectations expectations';
       grid-template-columns: minmax(310px, 1fr) 1fr;
     }
 

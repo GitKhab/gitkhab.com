@@ -3,35 +3,16 @@
     <h1 class="skills__title">Навыки</h1>
     <Tabs>
       <Tab name="HTML" :selected="true">
-        <ul class="skills__list">
-          <li class="skills__list-item">Семантическая, доступная верстка</li>
-          <li class="skills__list-item">БЭМ-нотация</li>
-          <li class="skills__list-item">Pug</li>
-        </ul>
+        <List :list="skills.html"/>
       </Tab>
       <Tab name="CSS">
-        <ul class="skills__list">
-          <li class="skills__list-item">Адаптивный дизайн (Flexbox, Grid, Media queries, etc.)</li>
-          <li class="skills__list-item">Препроцессоры (Sass, Stylus)</li>
-          <li class="skills__list-item">PostCSS</li>
-          <li class="skills__list-item">Bootstrap</li>
-        </ul>
+        <List :list="skills.css"/>
       </Tab>
       <Tab name="JS">
-        <ul class="skills__list">
-          <li class="skills__list-item">Ванильный JavaScript (ES5/6)</li>
-          <li class="skills__list-item">Vue (CLI, Router, Vuex)</li>
-          <li class="skills__list-item">Gulp (ленивые таски, инкрементальная сборка)</li>
-          <li class="skills__list-item">npm</li>
-        </ul>
+        <List :list="skills.js"/>
       </Tab>
       <Tab name="Прочее">
-        <ul class="skills__list">
-          <li class="skills__list-item">Git (Flow)</li>
-          <li class="skills__list-item">VCS (GitHub, GitLab, Bitbucket)</li>
-          <li class="skills__list-item">Опыт работы с языками программирования: PHP, SQL, Python, С#, Prolog, Bash, 1С</li>
-          <li class="skills__list-item">Опыт работы с программным обеспечением: JetBrains IDE (WebStorm, PhpStorm, etc.), Adobe (Photoshop, Illustrator), Figma, ftp-клиенты</li>
-        </ul>
+        <List :list="skills.other"/>
       </Tab>
     </Tabs>
   </section>
@@ -40,10 +21,40 @@
 <script>
   import Tabs from "@/components/Tabs";
   import Tab from "@/components/Tab";
+  import List from "@/components/List";
 
   export default {
     name: "Skills",
-    components: {Tab, Tabs},
+    components: {List, Tab, Tabs},
+    data() {
+      return {
+        skills: {
+          html: [
+            'Семантическая, доступная верстка',
+            'БЭМ-нотация',
+            'Pug'
+          ],
+          css: [
+            'Адаптивный дизайн (Flexbox, Grid, Media queries, etc.)',
+            'Препроцессоры (Sass, Stylus)',
+            'PostCSS',
+            'Bootstrap'
+          ],
+          js: [
+            'Ванильный JavaScript (ES5/6)',
+            'Vue (CLI, Router, Vuex)',
+            'Gulp (ленивые таски, инкрементальная сборка)',
+            'npm'
+          ],
+          other: [
+            'Git (Flow)',
+            'VCS (GitHub, GitLab, Bitbucket)',
+            'Опыт работы с языками программирования: PHP, SQL, Python, С#, Prolog, Bash, 1С',
+            'Опыт работы с программным обеспечением: JetBrains IDE (WebStorm, PhpStorm, etc.), Adobe (Photoshop, Illustrator), Figma, ftp-клиенты'
+          ]
+        }
+      }
+    }
   }
 </script>
 
@@ -57,16 +68,5 @@
     font-size: $font-size-xl;
     font-weight: 500;
     color: #fff;
-  }
-
-  .skills__list {
-    margin: 0;
-    padding-inline-start: 20px;
-  }
-
-  .skills__list-item {
-    &:not(:last-child) {
-      margin-bottom: 8px;
-    }
   }
 </style>

@@ -9,7 +9,10 @@ export default new Vuex.Store({
     person: {
       firstName: 'Василь',
       lastName: 'Хабибуллин',
-      birthday: '1995-09-11'
+      birthday: '1995-09-11',
+      email: 'gitkhab@yandex.ru',
+      telegram: 'https://t.me/GitKhab',
+      github: 'https://github.com/GitKhab'
     },
     domain: {
       sld: 'GitKhab',

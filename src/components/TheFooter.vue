@@ -1,12 +1,16 @@
 <template>
   <footer class="footer">
-    <div class="footer__inner">*footer*</div>
+    <div class="footer__inner">
+      <Contacts/>
+    </div>
   </footer>
 </template>
 
 <script>
+  import Contacts from "@/components/Contacts";
   export default {
-    name: "TheFooter"
+    name: "TheFooter",
+    components: {Contacts}
   }
 </script>
 

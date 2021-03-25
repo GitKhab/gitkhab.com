@@ -38,6 +38,7 @@
   .home__inner {
     @include inner-behavior;
     max-width: 420px;
+    padding-bottom: 32px;
     display: grid;
     grid-template-areas:
         'cv'

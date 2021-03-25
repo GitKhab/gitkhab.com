@@ -35,7 +35,7 @@
             'Pug'
           ],
           css: [
-            'Адаптивный дизайн (Flexbox, Grid, Media queries, etc.)',
+            'Адаптивный дизайн (Flexbox, Grid, etc.)',
             'Препроцессоры (Sass, Stylus)',
             'PostCSS',
             'Bootstrap'
@@ -43,14 +43,14 @@
           js: [
             'Ванильный JavaScript (ES5/6)',
             'Vue (CLI, Router, Vuex)',
-            'Gulp (ленивые таски, инкрементальная сборка)',
+            'Gulp, Webpack',
             'npm'
           ],
           other: [
             'Git (Flow)',
             'VCS (GitHub, GitLab, Bitbucket)',
-            'Опыт работы с языками программирования: PHP, SQL, Python, С#, Prolog, Bash, 1С',
-            'Опыт работы с программным обеспечением: JetBrains IDE (WebStorm, PhpStorm, etc.), Adobe (Photoshop, Illustrator), Figma, ftp-клиенты'
+            'Языки: PHP, Python, SQL, С#, Prolog, Bash, 1С',
+            'ПО: JetBrains IDEs, Adobe (Ps, Ai), Figma'
           ]
         }
       }

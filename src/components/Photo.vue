@@ -3,7 +3,7 @@
     <h2 class="photo__title">Фото</h2>
     <div class="photo__inner">
       <div class="photo__item">
-        <img class="photo__image photo__image_front" src="../assets/img/photo.jpg" alt="Фотография">
+        <img class="photo__image photo__image_front" src="@/assets/img/photo.jpg" alt="Фотография">
       </div>
       <div class="photo__item">
         <div class="photo__image photo__image_back"></div>

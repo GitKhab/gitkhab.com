@@ -2,34 +2,34 @@
   <section class="skills">
     <h1 class="skills__title">Навыки</h1>
     <Tabs class="skills__tabs">
-      <Tab name="HTML" :selected="true">
+      <TabsTab name="HTML" :selected="true">
         <img class="skills__img skills__img_html" src="@/assets/svg/brands/pug.svg" alt="pug">
         <List class="skills__list" :list="skills.html"/>
-      </Tab>
-      <Tab name="CSS">
+      </TabsTab>
+      <TabsTab name="CSS">
         <img class="skills__img skills__img_css" src="@/assets/svg/brands/postcss.svg" alt="postcss">
         <List class="skills__list" :list="skills.css"/>
-      </Tab>
-      <Tab name="JS">
+      </TabsTab>
+      <TabsTab name="JS">
         <img class="skills__img skills__img_js" src="@/assets/img/yargs.png" alt="yargs">
         <List class="skills__list" :list="skills.js"/>
-      </Tab>
-      <Tab name="Прочее">
+      </TabsTab>
+      <TabsTab name="Прочее">
         <img class="skills__img skills__img_other" src="@/assets/svg/brands/webstorm.svg" alt="webstorm">
         <List class="skills__list" :list="skills.other"/>
-      </Tab>
+      </TabsTab>
     </Tabs>
   </section>
 </template>
 
 <script>
   import Tabs from "@/components/Tabs";
-  import Tab from "@/components/Tab";
+  import TabsTab from "@/components/TabsTab";
   import List from "@/components/List";
 
   export default {
     name: "Skills",
-    components: {List, Tab, Tabs},
+    components: {List, TabsTab, Tabs},
     data() {
       return {
         skills: {

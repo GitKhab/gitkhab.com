@@ -1,18 +1,22 @@
 <template>
   <section class="skills">
     <h1 class="skills__title">Навыки</h1>
-    <Tabs>
+    <Tabs class="skills__tabs">
       <Tab name="HTML" :selected="true">
-        <List :list="skills.html"/>
+        <img class="skills__img skills__img_html" src="@/assets/svg/brands/pug.svg" alt="pug">
+        <List class="skills__list" :list="skills.html"/>
       </Tab>
       <Tab name="CSS">
-        <List :list="skills.css"/>
+        <img class="skills__img skills__img_css" src="@/assets/svg/brands/postcss.svg" alt="postcss">
+        <List class="skills__list" :list="skills.css"/>
       </Tab>
       <Tab name="JS">
-        <List :list="skills.js"/>
+        <img class="skills__img skills__img_js" src="@/assets/img/yargs.png" alt="yargs">
+        <List class="skills__list" :list="skills.js"/>
       </Tab>
       <Tab name="Прочее">
-        <List :list="skills.other"/>
+        <img class="skills__img skills__img_other" src="@/assets/svg/brands/webstorm.svg" alt="webstorm">
+        <List class="skills__list" :list="skills.other"/>
       </Tab>
     </Tabs>
   </section>
@@ -68,5 +72,48 @@
     font-size: $font-size-xl;
     font-weight: 500;
     color: #fff;
+  }
+
+  .skills__tabs {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skills__img {
+    display: none;
+    position: absolute;
+    right: 5%;
+    opacity: 0.65;
+    &_html {
+      bottom: -70px;
+      width: 220px;
+      transform: rotate(-8deg);
+    }
+    &_css {
+      bottom: -52px;
+      width: 190px;
+      transform: rotate(15deg);
+    }
+    &_js {
+      right: 0;
+      bottom: -150px;
+      width: 340px;
+      opacity: 0.75;
+    }
+    &_other {
+      bottom: -35px;
+      width: 165px;
+      opacity: 0.75;
+    }
+  }
+
+  .skills__list {
+    position: relative;
+  }
+
+  @media screen and (min-width: 640px) {
+    .skills__img {
+      display: block;
+    }
   }
 </style>

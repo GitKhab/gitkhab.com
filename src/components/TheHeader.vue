@@ -2,18 +2,18 @@
   <header class="header">
     <div class="header__inner">
       <router-link class="header__link" to="/" title="Главная страница">
-        <Logo/>
+        <TheLogo/>
       </router-link>
     </div>
   </header>
 </template>
 
 <script>
-  import Logo from "@/components/Logo";
+  import TheLogo from "@/components/TheLogo";
 
   export default {
     name: "TheHeader",
-    components: {Logo}
+    components: {TheLogo}
   }
 </script>
 

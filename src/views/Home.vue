@@ -11,7 +11,9 @@
       <Section class="home__subjects" title="Изучил за время обучения">
         <Subjects/>
       </Section>
-      <Skills class="home__skills"/>
+      <Section class="home__skills" title="Навыки">
+        <Skills/>
+      </Section>
       <Expectations class="home__expectations"/>
     </div>
   </main>

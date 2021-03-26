@@ -1,25 +1,22 @@
 <template>
-  <section class="skills">
-    <h1 class="skills__title">Навыки</h1>
-    <Tabs class="skills__tabs">
-      <TabsTab name="HTML" :selected="true">
-        <img class="skills__img skills__img_html" src="@/assets/svg/brands/pug.svg" alt="pug">
-        <List class="skills__list" :list="skills.html"/>
-      </TabsTab>
-      <TabsTab name="CSS">
-        <img class="skills__img skills__img_css" src="@/assets/svg/brands/postcss.svg" alt="postcss">
-        <List class="skills__list" :list="skills.css"/>
-      </TabsTab>
-      <TabsTab name="JS">
-        <img class="skills__img skills__img_js" src="@/assets/img/yargs.png" alt="yargs">
-        <List class="skills__list" :list="skills.js"/>
-      </TabsTab>
-      <TabsTab name="Прочее">
-        <img class="skills__img skills__img_other" src="@/assets/svg/brands/webstorm.svg" alt="webstorm">
-        <List class="skills__list" :list="skills.other"/>
-      </TabsTab>
-    </Tabs>
-  </section>
+  <Tabs class="skills">
+    <TabsTab class="skills__tab" name="HTML" :selected="true">
+      <List class="skills__list" :list="skills.html"/>
+      <img class="skills__img skills__img_html" src="@/assets/svg/brands/pug.svg" alt="pug">
+    </TabsTab>
+    <TabsTab class="skills__tab" name="CSS">
+      <List class="skills__list" :list="skills.css"/>
+      <img class="skills__img skills__img_css" src="@/assets/svg/brands/postcss.svg" alt="postcss">
+    </TabsTab>
+    <TabsTab class="skills__tab" name="JS">
+      <List class="skills__list" :list="skills.js"/>
+      <img class="skills__img skills__img_js" src="@/assets/img/yargs.png" alt="yargs">
+    </TabsTab>
+    <TabsTab class="skills__tab" name="Прочее">
+      <List class="skills__list" :list="skills.other"/>
+      <img class="skills__img skills__img_other" src="@/assets/svg/brands/webstorm.svg" alt="webstorm">
+    </TabsTab>
+  </Tabs>
 </template>
 
 <script>
@@ -65,19 +62,12 @@
 <style lang="scss">
   @import "~@/assets/sass/variables.scss";
 
-  .skills {}
-
-  .skills__title {
-    margin: 0 0 12px 0;
-    font-size: $font-size-xl;
-    font-weight: 500;
-    color: #fff;
-  }
-
-  .skills__tabs {
+  .skills {
     position: relative;
     overflow: hidden;
   }
+
+  .skills__tab {}
 
   .skills__img {
     display: none;

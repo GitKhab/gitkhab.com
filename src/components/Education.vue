@@ -65,7 +65,7 @@
   .education__label {
     font-size: $font-size-s;
     font-weight: 500;
-    color: rgba(#fff, 0.65);
+    color: #b4b5bc;
   }
 
   .education__content {

@@ -80,7 +80,7 @@
       box-shadow: 10px 10px 10px -12px $main-dark;
     }
     &_back {
-      background-color: rgba(#fff, 0.75);
+      background-color: $gray-light;
     }
   }
 

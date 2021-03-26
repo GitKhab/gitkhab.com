@@ -46,7 +46,7 @@
     padding: 0 8px;
     border-top-left-radius: $tabs-border-radius;
     border-top-right-radius: $tabs-border-radius;
-    background-color: rgba(#fff, 0.75);
+    background-color: $gray-light;
   }
 
   .tabs__tab {

@@ -31,7 +31,7 @@
 
   .card__body {
     @include square-ratio;
-    background-color: rgba(#fff, 0.75);
+    background-color: $gray-light;
     display: flex;
     border-radius: 12px;
   }

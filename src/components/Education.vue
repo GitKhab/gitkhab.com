@@ -1,11 +1,10 @@
 <template>
-  <section class="education">
-    <h1 class="education__title">Образование</h1>
+  <div class="education">
     <div class="education__group" v-for="item in education" :key="item.label">
       <div class="education__label">{{ item.label }}</div>
       <div class="education__content">{{ item.content }}</div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -49,15 +48,8 @@
 
   .education {}
 
-  .education__title {
-    margin: 0 0 12px 0;
-    font-size: $font-size-xl;
-    font-weight: 500;
-    color: #fff;
-  }
-
   .education__group {
-    &:not(:last-of-type) {
+    &:not(:last-child) {
       margin-bottom: 12px;
     }
   }

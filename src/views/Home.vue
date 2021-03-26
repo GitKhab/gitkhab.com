@@ -5,7 +5,9 @@
       <Section class="home__photo" title="Фото">
         <Photo/>
       </Section>
-      <Education class="home__education"/>
+      <Section class="home__education" title="Образование">
+        <Education/>
+      </Section>
       <Subjects class="home__subjects"/>
       <Skills class="home__skills"/>
       <Expectations class="home__expectations"/>

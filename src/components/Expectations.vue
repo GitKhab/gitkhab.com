@@ -1,8 +1,7 @@
 <template>
-  <section class="expectations">
-    <h1 class="expectations__title">Ожидания</h1>
-    <List :list="expectations"/>
-  </section>
+  <div class="expectations">
+    <List class="expectations__list" :list="expectations"/>
+  </div>
 </template>
 
 <script>
@@ -27,13 +26,9 @@
 <style lang="scss">
   @import "~@/assets/sass/variables.scss";
 
-  .expectations {
-    color: #fff;
-  }
+  .expectations {}
 
-  .expectations__title {
-    margin: 0 0 12px 0;
-    font-size: $font-size-xl;
-    font-weight: 500;
+  .expectations__list {
+    color: #fff;
   }
 </style>

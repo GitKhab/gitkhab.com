@@ -14,7 +14,9 @@
       <Section class="home__skills" title="Навыки">
         <Skills/>
       </Section>
-      <Expectations class="home__expectations"/>
+      <Section class="home__expectations" title="Ожидания">
+        <Expectations/>
+      </Section>
     </div>
   </main>
 </template>

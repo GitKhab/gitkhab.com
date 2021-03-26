@@ -12,9 +12,18 @@
     name: "Card",
     props: {
       hint: String,
-      imagePath: String,
-      imageAlt: String,
-      title: String,
+      imagePath: {
+        type: String,
+        required: true
+      },
+      imageAlt: {
+        type: String,
+        required: true
+      },
+      title: {
+        type: String,
+        required: true
+      }
     }
   }
 </script>
@@ -31,20 +40,20 @@
 
   .card__body {
     @include square-ratio;
-    background-color: $gray-light;
     display: flex;
+    background-color: $gray-light;
     border-radius: 12px;
   }
 
   .card__image {
-    margin: auto;
     width: 50%;
+    margin: auto;
     transition: transform 0.3s;
   }
 
   .card__caption {
-    margin: 6px auto 0 auto;
     width: 120px;
+    margin: 6px auto 0 auto;
     font-size: $font-size-s;
     text-align: center;
   }

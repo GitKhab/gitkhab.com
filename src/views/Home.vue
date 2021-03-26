@@ -2,7 +2,9 @@
   <main class="home">
     <div class="home__inner">
       <Cv class="home__cv"/>
-      <Photo class="home__photo"/>
+      <Section class="home__photo" title="Фото">
+        <Photo/>
+      </Section>
       <Education class="home__education"/>
       <Subjects class="home__subjects"/>
       <Skills class="home__skills"/>
@@ -18,10 +20,11 @@
   import Subjects from "@/components/Subjects";
   import Skills from "@/components/Skills";
   import Expectations from "@/components/Expectations";
+  import Section from "@/components/Section";
 
   export default {
     name: "Home",
-    components: {Expectations, Skills, Subjects, Education, Photo, Cv}
+    components: {Section, Expectations, Skills, Subjects, Education, Photo, Cv}
   }
 </script>
 

@@ -1,16 +1,13 @@
 <template>
-  <section class="photo">
-    <h1 class="photo__title">Фото</h1>
-    <div class="photo__inner">
-      <div class="photo__item">
-        <img class="photo__image photo__image_front" src="@/assets/img/photo.jpg" alt="Фотография">
-      </div>
-      <div class="photo__item">
-        <div class="photo__image photo__image_back"></div>
-        <div class="photo__caption">{{ personFullName }}, {{ personAge }} {{ pluralizeYear(personAge) }}</div>
-      </div>
+  <div class="photo">
+    <div class="photo__item">
+      <img class="photo__image photo__image_front" src="@/assets/img/photo.jpg" alt="Фотография">
     </div>
-  </section>
+    <div class="photo__item">
+      <div class="photo__image photo__image_back"></div>
+      <div class="photo__caption">{{ personFullName }}, {{ personAge }} {{ pluralizeYear(personAge) }}</div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -39,16 +36,6 @@
   @import "~@/assets/sass/mixins.scss";
 
   .photo {
-    color: #fff;
-  }
-
-  .photo__title {
-    margin: 0 0 12px 0;
-    font-size: $font-size-xl;
-    font-weight: 500;
-  }
-
-  .photo__inner {
     @include square-ratio;
   }
 

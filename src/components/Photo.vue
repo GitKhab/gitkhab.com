@@ -1,6 +1,6 @@
 <template>
-  <div class="photo">
-    <h2 class="photo__title">Фото</h2>
+  <section class="photo">
+    <h1 class="photo__title">Фото</h1>
     <div class="photo__inner">
       <div class="photo__item">
         <img class="photo__image photo__image_front" src="@/assets/img/photo.jpg" alt="Фотография">
@@ -10,7 +10,7 @@
         <div class="photo__caption">{{ personFullName }}, {{ personAge }} {{ pluralizeYear(personAge) }}</div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

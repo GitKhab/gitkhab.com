@@ -8,7 +8,9 @@
       <Section class="home__education" title="Образование">
         <Education/>
       </Section>
-      <Subjects class="home__subjects"/>
+      <Section class="home__subjects" title="Изучил за время обучения">
+        <Subjects/>
+      </Section>
       <Skills class="home__skills"/>
       <Expectations class="home__expectations"/>
     </div>

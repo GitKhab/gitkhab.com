@@ -46,6 +46,7 @@
     width: 50%;
     margin: auto;
     transition: transform 0.3s;
+    user-select: none;
   }
 
   .card__caption {

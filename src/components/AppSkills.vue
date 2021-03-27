@@ -72,6 +72,7 @@
     position: absolute;
     right: 5%;
     opacity: 0.65;
+    user-select: none;
     &_html {
       bottom: -70px;
       width: 220px;

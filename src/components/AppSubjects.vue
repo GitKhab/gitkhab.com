@@ -90,6 +90,5 @@
 
   .subjects__card {
     color: #fff;
-    cursor: help;
   }
 </style>

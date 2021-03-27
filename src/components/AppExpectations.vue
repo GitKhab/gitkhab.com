@@ -8,7 +8,7 @@
   import AppList from "@/components/AppList";
 
   export default {
-    name: "Expectations",
+    name: "AppExpectations",
     components: {AppList},
     data() {
       return {

@@ -15,7 +15,7 @@
         <AppSkills/>
       </AppSection>
       <AppSection class="home__expectations" title="Ожидания">
-        <Expectations/>
+        <AppExpectations/>
       </AppSection>
     </div>
   </main>
@@ -27,12 +27,12 @@
   import AppEducation from "@/components/AppEducation";
   import AppSubjects from "@/components/AppSubjects";
   import AppSkills from "@/components/AppSkills";
-  import Expectations from "@/components/Expectations";
+  import AppExpectations from "@/components/AppExpectations";
   import AppSection from "@/components/AppSection";
 
   export default {
     name: "Home",
-    components: {AppSection, Expectations, AppSkills, AppSubjects, AppEducation, AppPhoto, AppResumeHeader}
+    components: {AppSection, AppExpectations, AppSkills, AppSubjects, AppEducation, AppPhoto, AppResumeHeader}
   }
 </script>
 

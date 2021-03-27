@@ -12,7 +12,7 @@
         <AppSubjects/>
       </AppSection>
       <AppSection class="home__skills" title="Навыки">
-        <Skills/>
+        <AppSkills/>
       </AppSection>
       <AppSection class="home__expectations" title="Ожидания">
         <Expectations/>
@@ -26,13 +26,13 @@
   import AppPhoto from "@/components/AppPhoto";
   import AppEducation from "@/components/AppEducation";
   import AppSubjects from "@/components/AppSubjects";
-  import Skills from "@/components/Skills";
+  import AppSkills from "@/components/AppSkills";
   import Expectations from "@/components/Expectations";
   import AppSection from "@/components/AppSection";
 
   export default {
     name: "Home",
-    components: {AppSection, Expectations, Skills, AppSubjects, AppEducation, AppPhoto, AppResumeHeader}
+    components: {AppSection, Expectations, AppSkills, AppSubjects, AppEducation, AppPhoto, AppResumeHeader}
   }
 </script>
 

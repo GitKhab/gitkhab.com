@@ -23,7 +23,7 @@
 
 <script>
   export default {
-    name: "Contacts",
+    name: "AppContacts",
     computed: {
       github() {
         return this.$store.state.person.github;

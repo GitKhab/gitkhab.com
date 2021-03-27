@@ -1,16 +1,16 @@
 <template>
   <footer class="footer">
     <div class="footer__inner">
-      <Contacts/>
+      <AppContacts/>
     </div>
   </footer>
 </template>
 
 <script>
-  import Contacts from "@/components/Contacts";
+  import AppContacts from "@/components/AppContacts";
   export default {
     name: "TheFooter",
-    components: {Contacts}
+    components: {AppContacts}
   }
 </script>
 

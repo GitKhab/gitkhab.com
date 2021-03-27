@@ -1,8 +1,8 @@
 <template>
   <div class="resume">
-    <h1 class="resume__title">Резюме</h1>
+    <h1 class="resume__title">{{ resume.title }}</h1>
     <p class="resume__positions">
-      <BaseTextSeparator :list="positionList"/>
+      <BaseTextSeparator :list="resume.positions"/>
     </p>
   </div>
 </template>
@@ -13,9 +13,15 @@
   export default {
     name: "AppResumeHeader",
     components: {BaseTextSeparator},
-    computed: {
-      positionList() {
-        return this.$store.state.resume.positions;
+    data() {
+      return {
+        resume: {
+          title: 'Резюме',
+          positions: [
+            { id: 1, text: 'html-верстальщик' },
+            { id: 2, text: 'junior frontend-разработчик' }
+          ]
+        }
       }
     }
   }

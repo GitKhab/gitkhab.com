@@ -1,32 +1,32 @@
 <template>
   <AppTabs class="skills">
-    <TabsTab name="HTML" :selected="true">
+    <AppTabsTab name="HTML" :selected="true">
       <AppList class="skills__list" :list="skills.html"/>
       <img class="skills__img skills__img_html" src="@/assets/svg/brands/pug.svg" alt="pug">
-    </TabsTab>
-    <TabsTab name="CSS">
+    </AppTabsTab>
+    <AppTabsTab name="CSS">
       <AppList class="skills__list" :list="skills.css"/>
       <img class="skills__img skills__img_css" src="@/assets/svg/brands/postcss.svg" alt="postcss">
-    </TabsTab>
-    <TabsTab name="JS">
+    </AppTabsTab>
+    <AppTabsTab name="JS">
       <AppList class="skills__list" :list="skills.js"/>
       <img class="skills__img skills__img_js" src="@/assets/img/yargs.png" alt="yargs">
-    </TabsTab>
-    <TabsTab name="Прочее">
+    </AppTabsTab>
+    <AppTabsTab name="Прочее">
       <AppList class="skills__list" :list="skills.other"/>
       <img class="skills__img skills__img_other" src="@/assets/svg/brands/webstorm.svg" alt="webstorm">
-    </TabsTab>
+    </AppTabsTab>
   </AppTabs>
 </template>
 
 <script>
   import AppTabs from "@/components/AppTabs";
-  import TabsTab from "@/components/TabsTab";
+  import AppTabsTab from "@/components/AppTabsTab";
   import AppList from "@/components/AppList";
 
   export default {
     name: "Skills",
-    components: {AppList, TabsTab, AppTabs},
+    components: {AppList, AppTabsTab, AppTabs},
     data() {
       return {
         skills: {

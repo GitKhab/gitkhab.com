@@ -14,7 +14,7 @@
   import Card from "@/components/Card";
 
   export default {
-    name: "Subjects",
+    name: "AppSubjects",
     components: {Card},
     data() {
       return {

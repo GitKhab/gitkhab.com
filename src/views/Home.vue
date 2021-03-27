@@ -2,21 +2,21 @@
   <main class="home">
     <div class="home__inner">
       <AppResumeHeader class="home__resume"/>
-      <Section class="home__photo" title="Фото">
+      <AppSection class="home__photo" title="Фото">
         <AppPhoto/>
-      </Section>
-      <Section class="home__education" title="Образование">
+      </AppSection>
+      <AppSection class="home__education" title="Образование">
         <Education/>
-      </Section>
-      <Section class="home__subjects" title="Изучил за время обучения">
+      </AppSection>
+      <AppSection class="home__subjects" title="Изучил за время обучения">
         <Subjects/>
-      </Section>
-      <Section class="home__skills" title="Навыки">
+      </AppSection>
+      <AppSection class="home__skills" title="Навыки">
         <Skills/>
-      </Section>
-      <Section class="home__expectations" title="Ожидания">
+      </AppSection>
+      <AppSection class="home__expectations" title="Ожидания">
         <Expectations/>
-      </Section>
+      </AppSection>
     </div>
   </main>
 </template>
@@ -28,11 +28,11 @@
   import Subjects from "@/components/Subjects";
   import Skills from "@/components/Skills";
   import Expectations from "@/components/Expectations";
-  import Section from "@/components/Section";
+  import AppSection from "@/components/AppSection";
 
   export default {
     name: "Home",
-    components: {Section, Expectations, Skills, Subjects, Education, AppPhoto, AppResumeHeader}
+    components: {AppSection, Expectations, Skills, Subjects, Education, AppPhoto, AppResumeHeader}
   }
 </script>
 

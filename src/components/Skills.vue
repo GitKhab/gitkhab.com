@@ -1,18 +1,18 @@
 <template>
   <Tabs class="skills">
-    <TabsTab class="skills__tab" name="HTML" :selected="true">
+    <TabsTab name="HTML" :selected="true">
       <List class="skills__list" :list="skills.html"/>
       <img class="skills__img skills__img_html" src="@/assets/svg/brands/pug.svg" alt="pug">
     </TabsTab>
-    <TabsTab class="skills__tab" name="CSS">
+    <TabsTab name="CSS">
       <List class="skills__list" :list="skills.css"/>
       <img class="skills__img skills__img_css" src="@/assets/svg/brands/postcss.svg" alt="postcss">
     </TabsTab>
-    <TabsTab class="skills__tab" name="JS">
+    <TabsTab name="JS">
       <List class="skills__list" :list="skills.js"/>
       <img class="skills__img skills__img_js" src="@/assets/img/yargs.png" alt="yargs">
     </TabsTab>
-    <TabsTab class="skills__tab" name="Прочее">
+    <TabsTab name="Прочее">
       <List class="skills__list" :list="skills.other"/>
       <img class="skills__img skills__img_other" src="@/assets/svg/brands/webstorm.svg" alt="webstorm">
     </TabsTab>
@@ -31,27 +31,27 @@
       return {
         skills: {
           html: [
-            'Семантическая, доступная верстка',
-            'БЭМ-нотация',
-            'Pug'
+            { id: 1, text: 'Семантическая, доступная верстка' },
+            { id: 2, text: 'БЭМ-нотация' },
+            { id: 3, text: 'Pug' }
           ],
           css: [
-            'Адаптивный дизайн (Flexbox, Grid, etc.)',
-            'Препроцессоры (Sass, Stylus)',
-            'PostCSS',
-            'Bootstrap'
+            { id: 1, text: 'Адаптивный дизайн (Flexbox, Grid, etc.)' },
+            { id: 2, text: 'Препроцессоры (Sass, Stylus)' },
+            { id: 3, text: 'PostCSS' },
+            { id: 4, text: 'Bootstrap' }
           ],
           js: [
-            'Ванильный JavaScript (ES5/6)',
-            'Vue (CLI, Router, Vuex)',
-            'Gulp, Webpack',
-            'npm'
+            { id: 1, text: 'Ванильный JavaScript (ES5/6)' },
+            { id: 2, text: 'Vue (CLI, Router, Vuex)' },
+            { id: 3, text: 'Gulp, Webpack' },
+            { id: 4, text: 'npm' }
           ],
           other: [
-            'Git (Flow)',
-            'VCS (GitHub, GitLab, Bitbucket)',
-            'Языки: PHP, Python, SQL, С#, Prolog, Bash, 1С',
-            'ПО: JetBrains IDEs, Adobe (Ps, Ai), Figma'
+            { id: 1, text: 'Git (Flow)' },
+            { id: 2, text: 'VCS (GitHub, GitLab, Bitbucket)' },
+            { id: 3, text: 'Языки: PHP, Python, SQL, С#, Prolog, Bash, 1С' },
+            { id: 4, text: 'ПО: JetBrains IDEs, Adobe (Ps, Ai), Figma' }
           ]
         }
       }
@@ -66,8 +66,6 @@
     position: relative;
     overflow: hidden;
   }
-
-  .skills__tab {}
 
   .skills__img {
     display: none;

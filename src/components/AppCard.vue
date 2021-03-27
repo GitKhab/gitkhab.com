@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: "Card",
+    name: "AppCard",
     props: {
       hint: String,
       title: String,

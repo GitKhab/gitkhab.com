@@ -1,6 +1,6 @@
 <template>
   <div class="subjects">
-    <Card class="subjects__card"
+    <AppCard class="subjects__card"
           v-for="item in subjects"
           :key="item.id"
           :title="item.title"
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-  import Card from "@/components/Card";
+  import AppCard from "@/components/AppCard";
 
   export default {
     name: "AppSubjects",
-    components: {Card},
+    components: {AppCard},
     data() {
       return {
         subjects: [

@@ -14,6 +14,18 @@ export default new Vuex.Store({
       telegram: 'https://t.me/GitKhab',
       github: 'https://github.com/GitKhab'
     },
+    resume: {
+      positions: [
+        {
+          id: 1,
+          text: 'html-верстальщик'
+        },
+        {
+          id: 2,
+          text: 'junior frontend-разработчик'
+        }
+      ]
+    },
     domain: {
       sld: 'GitKhab',
       tld: 'com'

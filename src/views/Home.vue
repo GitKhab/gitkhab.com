@@ -1,7 +1,7 @@
 <template>
   <main class="home">
     <div class="home__inner">
-      <Cv class="home__cv"/>
+      <AppResumeHeader class="home__resume"/>
       <Section class="home__photo" title="Фото">
         <Photo/>
       </Section>
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-  import Cv from "@/components/Cv";
+  import AppResumeHeader from "@/components/AppResumeHeader";
   import Photo from "@/components/Photo";
   import Education from "@/components/Education";
   import Subjects from "@/components/Subjects";
@@ -32,7 +32,7 @@
 
   export default {
     name: "Home",
-    components: {Section, Expectations, Skills, Subjects, Education, Photo, Cv}
+    components: {Section, Expectations, Skills, Subjects, Education, Photo, AppResumeHeader}
   }
 </script>
 
@@ -52,7 +52,7 @@
     padding-bottom: 32px;
     display: grid;
     grid-template-areas:
-        'cv'
+        'resume'
         'photo'
         'education'
         'subjects'
@@ -61,8 +61,8 @@
     grid-gap: 32px;
   }
 
-  .home__cv {
-    grid-area: cv;
+  .home__resume {
+    grid-area: resume;
   }
 
   .home__photo {
@@ -89,7 +89,7 @@
     .home__inner {
       max-width: 768px;
       grid-template-areas:
-        'cv cv'
+        'resume resume'
         'photo education'
         'subjects subjects'
         'skills skills'

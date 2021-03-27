@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: "Education",
+    name: "AppEducation",
     data() {
       return {
         education: [

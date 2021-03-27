@@ -3,7 +3,7 @@
     <div class="home__inner">
       <AppResumeHeader class="home__resume"/>
       <Section class="home__photo" title="Фото">
-        <Photo/>
+        <AppPhoto/>
       </Section>
       <Section class="home__education" title="Образование">
         <Education/>
@@ -23,7 +23,7 @@
 
 <script>
   import AppResumeHeader from "@/components/AppResumeHeader";
-  import Photo from "@/components/Photo";
+  import AppPhoto from "@/components/AppPhoto";
   import Education from "@/components/Education";
   import Subjects from "@/components/Subjects";
   import Skills from "@/components/Skills";
@@ -32,7 +32,7 @@
 
   export default {
     name: "Home",
-    components: {Section, Expectations, Skills, Subjects, Education, Photo, AppResumeHeader}
+    components: {Section, Expectations, Skills, Subjects, Education, AppPhoto, AppResumeHeader}
   }
 </script>
 

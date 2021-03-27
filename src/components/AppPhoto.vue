@@ -14,7 +14,7 @@
   import pluralizeNoun from "@/assets/js/pluralizeNoun";
 
   export default {
-    name: "Photo",
+    name: "AppPhoto",
     computed: {
       personFullName() {
         return this.$store.getters.getPersonFullName;

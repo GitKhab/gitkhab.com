@@ -2,10 +2,10 @@
   <div class="tabs">
     <div class="tabs__header">
       <button class="tabs__tab"
-              :class="{ 'tabs__tab_active': tab.isActive }"
               v-for="tab in tabs"
               :key="tab.name"
-              @click="selectTab(tab)">{{ tab.name }}</button>
+              @click="selectTab(tab)"
+              :class="{ 'tabs__tab_active': tab.isActive }">{{ tab.name }}</button>
     </div>
     <div class="tabs__body">
       <slot></slot>

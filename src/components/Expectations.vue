@@ -1,15 +1,15 @@
 <template>
   <div class="expectations">
-    <List class="expectations__list" :list="expectations"/>
+    <AppList class="expectations__list" :list="expectations"/>
   </div>
 </template>
 
 <script>
-  import List from "@/components/List";
+  import AppList from "@/components/AppList";
 
   export default {
     name: "Expectations",
-    components: {List},
+    components: {AppList},
     data() {
       return {
         expectations: [

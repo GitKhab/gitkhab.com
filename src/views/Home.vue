@@ -36,7 +36,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "~@/assets/sass/variables.scss";
   @import "~@/assets/sass/mixins.scss";
 

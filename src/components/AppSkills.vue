@@ -1,5 +1,5 @@
 <template>
-  <Tabs class="skills">
+  <AppTabs class="skills">
     <TabsTab name="HTML" :selected="true">
       <AppList class="skills__list" :list="skills.html"/>
       <img class="skills__img skills__img_html" src="@/assets/svg/brands/pug.svg" alt="pug">
@@ -16,17 +16,17 @@
       <AppList class="skills__list" :list="skills.other"/>
       <img class="skills__img skills__img_other" src="@/assets/svg/brands/webstorm.svg" alt="webstorm">
     </TabsTab>
-  </Tabs>
+  </AppTabs>
 </template>
 
 <script>
-  import Tabs from "@/components/Tabs";
+  import AppTabs from "@/components/AppTabs";
   import TabsTab from "@/components/TabsTab";
   import AppList from "@/components/AppList";
 
   export default {
     name: "Skills",
-    components: {AppList, TabsTab, Tabs},
+    components: {AppList, TabsTab, AppTabs},
     data() {
       return {
         skills: {

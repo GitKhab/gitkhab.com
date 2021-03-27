@@ -3,7 +3,7 @@
     <div class="card__body">
       <img class="card__image" :src="imagePath" :alt="imageAlt">
     </div>
-    <div class="card__caption">{{ title }}</div>
+    <div class="card__caption" v-if="title">{{ title }}</div>
   </div>
 </template>
 
@@ -12,15 +12,12 @@
     name: "Card",
     props: {
       hint: String,
+      title: String,
       imagePath: {
         type: String,
         required: true
       },
       imageAlt: {
-        type: String,
-        required: true
-      },
-      title: {
         type: String,
         required: true
       }

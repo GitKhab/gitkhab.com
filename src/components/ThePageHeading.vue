@@ -27,6 +27,7 @@
   .heading__text {
     margin: 0;
     font-size: $font-size-xxl;
+    line-height: 1.2;
     font-weight: 500;
   }
 </style>

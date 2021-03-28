@@ -22,11 +22,11 @@
   @import "~@/assets/fonts/roboto/roboto.css";
   @import "~@/assets/sass/variables.scss";
 
-  html {
+  .html {
     height: 100%;
   }
 
-  body {
+  .body {
     height: inherit;
     min-width: 320px;
     margin: 0;

@@ -1,7 +1,9 @@
 <template>
   <main class="home">
     <div class="home__inner">
-      <AppResumeHeader class="home__resume"/>
+      <ThePageHeading class="home__title" text="Резюме">
+        <AppResumePositions/>
+      </ThePageHeading>
       <AppSection class="home__photo" title="Фото">
         <AppPhoto/>
       </AppSection>
@@ -22,17 +24,27 @@
 </template>
 
 <script>
-  import AppResumeHeader from "@/components/AppResumeHeader";
+  import ThePageHeading from "@/components/ThePageHeading";
   import AppPhoto from "@/components/AppPhoto";
   import AppEducation from "@/components/AppEducation";
   import AppSubjects from "@/components/AppSubjects";
   import AppSkills from "@/components/AppSkills";
   import AppExpectations from "@/components/AppExpectations";
   import AppSection from "@/components/AppSection";
+  import AppResumePositions from "@/components/AppResumePositions";
 
   export default {
     name: "Home",
-    components: {AppSection, AppExpectations, AppSkills, AppSubjects, AppEducation, AppPhoto, AppResumeHeader}
+    components: {
+      AppResumePositions,
+      AppSection,
+      AppExpectations,
+      AppSkills,
+      AppSubjects,
+      AppEducation,
+      AppPhoto,
+      ThePageHeading
+    }
   }
 </script>
 
@@ -52,7 +64,7 @@
     padding-bottom: 32px;
     display: grid;
     grid-template-areas:
-        'resume'
+        'title'
         'photo'
         'education'
         'subjects'
@@ -61,8 +73,8 @@
     grid-gap: 32px;
   }
 
-  .home__resume {
-    grid-area: resume;
+  .home__title {
+    grid-area: title;
   }
 
   .home__photo {
@@ -89,7 +101,7 @@
     .home__inner {
       max-width: 768px;
       grid-template-areas:
-        'resume resume'
+        'title title'
         'photo education'
         'subjects subjects'
         'skills skills'

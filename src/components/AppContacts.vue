@@ -45,8 +45,6 @@
   @import "~@/assets/sass/variables.scss";
   @import "~@/assets/sass/mixins.scss";
 
-  $transition-duration: 0.15s;
-
   .contacts {
     display: flex;
     justify-content: center;
@@ -55,6 +53,7 @@
 
   .contacts__link {
     @include focus-visible(#fff, 5px);
+    @include visual-state-transition;
     display: inline-flex;
     align-items: center;
     margin: 5px 0;
@@ -62,7 +61,6 @@
     border-radius: 25px;
     color: #fff;
     text-decoration: none;
-    transition: color $transition-duration, background-color $transition-duration;
     &:not(:first-child) {
       margin-left: 5px;
     }
@@ -79,10 +77,10 @@
   }
 
   .contacts__icon {
+    @include visual-state-transition;
     width: 20px;
     height: 20px;
     fill: #fff;
-    transition: fill $transition-duration;
   }
 
   .contacts__caption {

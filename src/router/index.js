@@ -13,7 +13,10 @@ const routes = [
       {
         path: '',
         name: Home,
-        component: Home
+        component: Home,
+        meta: {
+          title: 'Резюме на позицию «junior frontend-разработчик»'
+        }
       }
     ]
   }

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import BaseLayout from "@/views/BaseLayout";
 import Home from '@/views/Home.vue'
+import Error404 from '@/views/NotFound'
 
 Vue.use(VueRouter)
 
@@ -19,6 +20,13 @@ const routes = [
         }
       }
     ]
+  },
+  {
+    path: '*',
+    component: Error404,
+    meta: {
+      title: 'Страница не найдена'
+    }
   }
 ]
 

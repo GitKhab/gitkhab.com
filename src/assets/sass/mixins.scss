@@ -1,5 +1,5 @@
-@mixin text-color-transition {
-  transition: color 0.15s;
+@mixin visual-state-transition($duration: 0.15s) {
+  transition: color $duration, background-color $duration, fill $duration;
 }
 
 @mixin square-ratio {

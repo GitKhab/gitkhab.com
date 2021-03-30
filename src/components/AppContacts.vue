@@ -1,22 +1,10 @@
 <template>
   <div class="contacts">
-    <a class="contacts__link" :href="github">
-      <svg class="contacts__icon contacts__icon_github">
-        <use xlink:href="@/assets/svg/sprites/fontawesome.svg#github"></use>
+    <a class="contacts__link" v-for="item in contactData" :key="item.id" :href="item.hyperlink">
+      <svg class="contacts__icon" :class="addImageModifier(item)">
+        <use :xlink:href="item.icon.path + item.icon.hash"></use>
       </svg>
-      <span class="contacts__caption">GitHub</span>
-    </a>
-    <a class="contacts__link" :href="telegram">
-      <svg class="contacts__icon contacts__icon_telegram">
-        <use xlink:href="@/assets/svg/sprites/fontawesome.svg#telegram-plane"></use>
-      </svg>
-      <span class="contacts__caption">Telegram</span>
-    </a>
-    <a class="contacts__link" :href="mailTo">
-      <svg class="contacts__icon contacts__icon_mail">
-        <use xlink:href="@/assets/svg/sprites/fontawesome.svg#envelope"></use>
-      </svg>
-      <span class="contacts__caption">{{ email }}</span>
+      <span class="contacts__caption">{{ item.text }}</span>
     </a>
   </div>
 </template>
@@ -25,17 +13,13 @@
   export default {
     name: "AppContacts",
     computed: {
-      github() {
-        return this.$store.state.person.github;
-      },
-      telegram() {
-        return this.$store.state.person.telegram;
-      },
-      email() {
-        return this.$store.state.person.email;
-      },
-      mailTo() {
-        return 'mailto:' + this.$store.state.person.email;
+      contactData() {
+        return this.$store.state.person.contactData;
+      }
+    },
+    methods: {
+      addImageModifier(contactData) {
+        return (contactData.text === 'Telegram') ? 'contacts__icon_telegram' : '';
       }
     }
   }

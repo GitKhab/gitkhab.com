@@ -10,10 +10,10 @@
 </template>
 
 <script>
-  import AppChip from "@/components/AppChip";
+  import AppChip from '@/components/AppChip';
 
   export default {
-    name: "AppContacts",
+    name: 'AppContacts',
     components: {AppChip},
     computed: {
       contactData() {

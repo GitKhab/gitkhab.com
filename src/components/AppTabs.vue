@@ -15,7 +15,7 @@
 
 <script>
   export default {
-    name: "AppTabs",
+    name: 'AppTabs',
     data() {
       return {
         tabs: []

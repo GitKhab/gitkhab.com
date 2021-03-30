@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: "BaseTextSeparator",
+    name: 'BaseTextSeparator',
     props: {
       list: {
         type: Array,

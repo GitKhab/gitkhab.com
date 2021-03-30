@@ -9,10 +9,10 @@
 </template>
 
 <script>
-  import TheLogo from "@/components/TheLogo";
+  import TheLogo from '@/components/TheLogo';
 
   export default {
-    name: "TheHeader",
+    name: 'TheHeader',
     components: {TheLogo}
   }
 </script>

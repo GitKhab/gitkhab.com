@@ -8,12 +8,12 @@
 </template>
 
 <script>
-  import AppTabs from "@/components/AppTabs";
-  import AppTabsTab from "@/components/AppTabsTab";
-  import AppList from "@/components/AppList";
+  import AppTabs from '@/components/AppTabs';
+  import AppTabsTab from '@/components/AppTabsTab';
+  import AppList from '@/components/AppList';
 
   export default {
-    name: "Skills",
+    name: 'Skills',
     components: {AppList, AppTabsTab, AppTabs},
     computed: {
       skills() {

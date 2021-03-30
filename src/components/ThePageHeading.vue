@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: "ThePageHeading",
+    name: 'ThePageHeading',
     props: {
       text: {
         type: String,

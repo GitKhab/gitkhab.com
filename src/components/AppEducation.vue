@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: "AppEducation",
+    name: 'AppEducation',
     computed: {
       education() {
         return this.$store.state.education;

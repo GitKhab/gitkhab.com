@@ -11,10 +11,10 @@
 </template>
 
 <script>
-  import AppCard from "@/components/AppCard";
+  import AppCard from '@/components/AppCard';
 
   export default {
-    name: "AppSubjects",
+    name: 'AppSubjects',
     components: {AppCard},
     computed: {
       subjects() {

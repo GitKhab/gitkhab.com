@@ -24,17 +24,17 @@
 </template>
 
 <script>
-  import ThePageHeading from "@/components/ThePageHeading";
-  import AppPhoto from "@/components/AppPhoto";
-  import AppEducation from "@/components/AppEducation";
-  import AppSubjects from "@/components/AppSubjects";
-  import AppSkills from "@/components/AppSkills";
-  import AppExpectations from "@/components/AppExpectations";
-  import AppSection from "@/components/AppSection";
-  import AppResumePositions from "@/components/AppResumePositions";
+  import ThePageHeading from '@/components/ThePageHeading';
+  import AppPhoto from '@/components/AppPhoto';
+  import AppEducation from '@/components/AppEducation';
+  import AppSubjects from '@/components/AppSubjects';
+  import AppSkills from '@/components/AppSkills';
+  import AppExpectations from '@/components/AppExpectations';
+  import AppSection from '@/components/AppSection';
+  import AppResumePositions from '@/components/AppResumePositions';
 
   export default {
-    name: "Home",
+    name: 'Home',
     components: {
       AppResumePositions,
       AppSection,

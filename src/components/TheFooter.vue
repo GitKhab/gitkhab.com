@@ -7,9 +7,9 @@
 </template>
 
 <script>
-  import AppContacts from "@/components/AppContacts";
+  import AppContacts from '@/components/AppContacts';
   export default {
-    name: "TheFooter",
+    name: 'TheFooter',
     components: {AppContacts}
   }
 </script>

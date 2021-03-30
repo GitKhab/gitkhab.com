@@ -5,10 +5,10 @@
 </template>
 
 <script>
-  import AppList from "@/components/AppList";
+  import AppList from '@/components/AppList';
 
   export default {
-    name: "AppExpectations",
+    name: 'AppExpectations',
     components: {AppList},
     computed: {
       expectations() {

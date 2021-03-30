@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: "AppTabsTab",
+    name: 'AppTabsTab',
     props: {
       name: {
         type: String,

@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: "AppChip",
+    name: 'AppChip',
     props: {
       iconModifier: String,
       iconPath: {

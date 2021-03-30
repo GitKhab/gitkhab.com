@@ -5,10 +5,10 @@
 </template>
 
 <script>
-  import BaseTextSeparator from "@/components/BaseTextSeparator";
+  import BaseTextSeparator from '@/components/BaseTextSeparator';
 
   export default {
-    name: "AppResumePositions",
+    name: 'AppResumePositions',
     components: {BaseTextSeparator},
     computed: {
       resumePositions() {

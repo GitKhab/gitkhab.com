@@ -11,10 +11,10 @@
 </template>
 
 <script>
-  import pluralizeNoun from "@/assets/js/pluralizeNoun";
+  import pluralizeNoun from '@/assets/js/pluralizeNoun';
 
   export default {
-    name: "AppPhoto",
+    name: 'AppPhoto',
     computed: {
       personFullName() {
         return this.$store.getters.getPersonFullName;

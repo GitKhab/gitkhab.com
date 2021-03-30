@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: "TheLogo",
+    name: 'TheLogo',
     computed: {
       sld() {
         return this.$store.state.website.domain.sld;

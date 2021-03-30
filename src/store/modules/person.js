@@ -20,8 +20,7 @@ const state = () => ({
       hyperlink: 'https://t.me/GitKhab',
       icon: {
         path: require('@/assets/svg/sprites/fontawesome.svg'),
-        hash: '#telegram-plane',
-        modifier: 'contacts__icon_telegram'
+        hash: '#telegram-plane'
       }
     },
     email: {

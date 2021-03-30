@@ -6,6 +6,7 @@ import resume from '@/store/modules/resume'
 import education from '@/store/modules/education'
 import subjects from '@/store/modules/subjects'
 import skills from '@/store/modules/skills'
+import expectations from '@/store/modules/expectations'
 
 Vue.use(Vuex)
 
@@ -16,6 +17,7 @@ export default new Vuex.Store({
     resume,
     education,
     subjects,
-    skills
+    skills,
+    expectations
   }
 })

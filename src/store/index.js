@@ -4,6 +4,7 @@ import website from '@/store/modules/website'
 import person from '@/store/modules/person'
 import resume from '@/store/modules/resume'
 import education from '@/store/modules/education'
+import subjects from '@/store/modules/subjects'
 
 Vue.use(Vuex)
 
@@ -12,6 +13,7 @@ export default new Vuex.Store({
     website,
     person,
     resume,
-    education
+    education,
+    subjects
   }
 })

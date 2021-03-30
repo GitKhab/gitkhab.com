@@ -1,20 +1,8 @@
 <template>
   <AppTabs class="skills">
-    <AppTabsTab name="HTML" :selected="true">
-      <AppList class="skills__list" :list="skills.html"/>
-      <img class="skills__img skills__img_html" src="@/assets/svg/brands/pug.svg" alt="pug">
-    </AppTabsTab>
-    <AppTabsTab name="CSS">
-      <AppList class="skills__list" :list="skills.css"/>
-      <img class="skills__img skills__img_css" src="@/assets/svg/brands/postcss.svg" alt="postcss">
-    </AppTabsTab>
-    <AppTabsTab name="JS">
-      <AppList class="skills__list" :list="skills.js"/>
-      <img class="skills__img skills__img_js" src="@/assets/img/yargs.png" alt="yargs">
-    </AppTabsTab>
-    <AppTabsTab name="Прочее">
-      <AppList class="skills__list" :list="skills.other"/>
-      <img class="skills__img skills__img_other" src="@/assets/svg/brands/webstorm.svg" alt="webstorm">
+    <AppTabsTab v-for="item in skills" :key="item.id" :name="item.name" :selected="item.id === 1">
+      <AppList class="skills__list" :list="item.list"/>
+      <img class="skills__img" :class="addImageModifier(item)" :src="item.image.path" :alt="item.image.alt">
     </AppTabsTab>
   </AppTabs>
 </template>
@@ -30,6 +18,26 @@
     computed: {
       skills() {
         return this.$store.state.skills;
+      }
+    },
+    methods: {
+      addImageModifier(skills) {
+        let classname = '';
+        switch (skills.name) {
+          case 'HTML':
+            classname = 'skills__img_html';
+            break;
+          case 'CSS':
+            classname = 'skills__img_css';
+            break;
+          case 'JS':
+            classname = 'skills__img_js';
+            break;
+          case 'Прочее':
+            classname = 'skills__img_other';
+            break;
+        }
+        return classname;
       }
     }
   }

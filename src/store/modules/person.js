@@ -1,4 +1,4 @@
-import getAge from "@/assets/js/getAge";
+import getAge from '@/assets/js/getAge'
 
 const state = () => ({
   firstName: 'Василь',

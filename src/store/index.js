@@ -1,33 +1,23 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import getAge from "@/assets/js/getAge";
+import website from '@/store/modules/website'
+import person from '@/store/modules/person'
+import resume from '@/store/modules/resume'
+import education from '@/store/modules/education'
+import subjects from '@/store/modules/subjects'
+import skills from '@/store/modules/skills'
+import expectations from '@/store/modules/expectations'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-    person: {
-      firstName: 'Василь',
-      lastName: 'Хабибуллин',
-      birthday: '1995-09-11',
-      email: 'gitkhab@yandex.ru',
-      telegram: 'https://t.me/GitKhab',
-      github: 'https://github.com/GitKhab'
-    },
-    domain: {
-      sld: 'GitKhab',
-      tld: 'com'
-    }
-  },
-  getters: {
-    getPersonFullName(state) {
-      return `${state.person.lastName} ${state.person.firstName}`;
-    },
-    getPersonAge(state) {
-      return getAge(state.person.birthday);
-    }
-  },
-  mutations: {},
-  actions: {},
-  modules: {}
+  modules: {
+    website,
+    person,
+    resume,
+    education,
+    subjects,
+    skills,
+    expectations
+  }
 })

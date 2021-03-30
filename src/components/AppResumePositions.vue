@@ -1,6 +1,6 @@
 <template>
   <p class="positions">
-    <BaseTextSeparator :list="positions"/>
+    <BaseTextSeparator :list="resumePositions"/>
   </p>
 </template>
 
@@ -10,12 +10,9 @@
   export default {
     name: "AppResumePositions",
     components: {BaseTextSeparator},
-    data() {
-      return {
-        positions: [
-          { id: 1, text: 'html-верстальщик' },
-          { id: 2, text: 'junior frontend-разработчик' }
-        ]
+    computed: {
+      resumePositions() {
+        return this.$store.state.resume.positions;
       }
     }
   }

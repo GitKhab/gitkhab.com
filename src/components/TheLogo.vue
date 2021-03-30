@@ -9,11 +9,11 @@
   export default {
     name: "TheLogo",
     computed: {
-      sld () {
-        return this.$store.state.domain.sld;
+      sld() {
+        return this.$store.state.website.domain.sld;
       },
-      tld () {
-        return this.$store.state.domain.tld;
+      tld() {
+        return this.$store.state.website.domain.tld;
       }
     }
   }

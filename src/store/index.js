@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import website from '@/store/modules/website'
 import getAge from "@/assets/js/getAge";
 
 Vue.use(Vuex)
@@ -13,10 +14,6 @@ export default new Vuex.Store({
       email: 'gitkhab@yandex.ru',
       telegram: 'https://t.me/GitKhab',
       github: 'https://github.com/GitKhab'
-    },
-    domain: {
-      sld: 'GitKhab',
-      tld: 'com'
     }
   },
   getters: {
@@ -29,5 +26,7 @@ export default new Vuex.Store({
   },
   mutations: {},
   actions: {},
-  modules: {}
+  modules: {
+    website
+  }
 })

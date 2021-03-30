@@ -8,6 +8,7 @@
 
 <script>
   import AppContacts from '@/components/AppContacts';
+
   export default {
     name: 'TheFooter',
     components: {AppContacts}

@@ -1,0 +1,34 @@
+@mixin visual-state-transition($duration: 0.15s) {
+  transition: color $duration, background-color $duration, fill $duration;
+}
+
+@mixin square-ratio {
+  width: 100%;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+@mixin inner-behavior {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 16px;
+  @media screen and (min-width: 640px) {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@mixin focus-visible($color: PaleVioletRed, $offset: 0) {
+  &:focus {
+    outline: 0;
+  }
+  &:focus-visible {
+    outline: 2px solid $color;
+    outline-offset: $offset;
+  }
+}

@@ -5,8 +5,8 @@
           :key="item.id"
           :title="item.title"
           :hint="item.hint ? item.hint : item.title"
-          :image-path="require(`@/assets/svg/subjects/${item.imageName}.svg`)"
-          :image-alt="item.imageName"/>
+          :image-path="item.image.path"
+          :image-alt="item.image.alt"/>
   </div>
 </template>
 

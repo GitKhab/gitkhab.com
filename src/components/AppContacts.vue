@@ -39,6 +39,7 @@
   }
 
   .contacts__link {
+    @include focus-visible(#fff);
     text-decoration: none;
     border-radius: 25px;
     &:not(:first-child) {

@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 import BaseLayout from '@/views/BaseLayout';
-import Home from '@/views/Home.vue'
-import Error404 from '@/views/NotFound'
+import Home from '@/views/Home.vue';
+import Error404 from '@/views/NotFound';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -28,7 +28,7 @@ const routes = [
       title: 'Страница не найдена'
     }
   }
-]
+];
 
 const router = new VueRouter({
   mode: 'history',

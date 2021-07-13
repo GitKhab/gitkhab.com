@@ -1,7 +1,7 @@
 const state = () => ({
   positions: [
     { id: 1, text: 'html-верстальщик' },
-    { id: 2, text: 'junior frontend-разработчик' }
+    { id: 2, text: 'frontend-разработчик' }
   ]
 })
 

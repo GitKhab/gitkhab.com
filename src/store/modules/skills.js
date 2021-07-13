@@ -3,9 +3,10 @@ const state = () => ([
     id: 1,
     name: 'HTML',
     list: [
-      { id: 1, text: 'Семантическая, доступная верстка' },
-      { id: 2, text: 'БЭМ-нотация' },
-      { id: 3, text: 'Pug' }
+      { id: 1, text: 'Семантическая верстка' },
+      { id: 2, text: 'Доступность (a11y)' },
+      { id: 3, text: 'БЭМ-нотация' },
+      { id: 4, text: 'Шаблонизатор (Pug)' }
     ],
     image: {
       path: require('@/assets/svg/brands/pug.svg'),
@@ -17,7 +18,7 @@ const state = () => ([
     name: 'CSS',
     list: [
       { id: 1, text: 'Адаптивный дизайн (Flexbox, Grid, etc.)' },
-      { id: 2, text: 'Препроцессоры (Sass, Stylus)' },
+      { id: 2, text: 'Препроцессоры (Sass, Less, Stylus)' },
       { id: 3, text: 'PostCSS' },
       { id: 4, text: 'Bootstrap' }
     ],
@@ -32,8 +33,8 @@ const state = () => ([
     list: [
       { id: 1, text: 'Ванильный JavaScript (ES5/6)' },
       { id: 2, text: 'Vue (CLI, Router, Vuex)' },
-      { id: 3, text: 'Gulp, Webpack' },
-      { id: 4, text: 'npm' }
+      { id: 3, text: 'Webpack, Gulp' },
+      { id: 4, text: 'npm, Yarn' }
     ],
     image: {
       path: require('@/assets/img/yargs.png'),
@@ -47,7 +48,7 @@ const state = () => ([
       { id: 1, text: 'Git (Flow)' },
       { id: 2, text: 'VCS (GitHub, GitLab, Bitbucket)' },
       { id: 3, text: 'Языки: PHP, Python, SQL, С#, Prolog, Bash, 1С' },
-      { id: 4, text: 'ПО: JetBrains IDEs, Adobe (Ps, Ai), Figma' }
+      { id: 4, text: 'ПО: JetBrains IDEs, Figma, Adobe (Ps, Ai)' }
     ],
     image: {
       path: require('@/assets/svg/brands/webstorm.svg'),

@@ -10,7 +10,10 @@
 
 <script>
   export default {
-    name: 'NotFound'
+    name: 'NotFound',
+    metaInfo: {
+      title: 'Страница не найдена'
+    }
   }
 </script>
 

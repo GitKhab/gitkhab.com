@@ -14,19 +14,13 @@ const routes = [
       {
         path: '',
         name: Home,
-        component: Home,
-        meta: {
-          title: 'Резюме на позицию «junior frontend-разработчик»'
-        }
+        component: Home
       }
     ]
   },
   {
     path: '*',
-    component: Error404,
-    meta: {
-      title: 'Страница не найдена'
-    }
+    component: Error404
   }
 ];
 
@@ -37,7 +31,6 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title ? `${to.meta.title} ‒ GitKhab.com` : 'GitKhab.com';
   next();
 })
 

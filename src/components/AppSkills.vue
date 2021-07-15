@@ -44,8 +44,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-
   .skills {
     position: relative;
     overflow: hidden;

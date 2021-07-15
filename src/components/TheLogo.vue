@@ -20,8 +20,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-
   .logo {}
 
   .logo__sld {

@@ -18,8 +18,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-
   .heading {
     color: #fff;
   }

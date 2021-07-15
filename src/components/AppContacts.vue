@@ -29,9 +29,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-  @import "~@/assets/sass/mixins.scss";
-
   .contacts {
     display: flex;
     justify-content: center;

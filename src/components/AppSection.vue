@@ -15,8 +15,6 @@
 </script>
 
 <style lang="scss">
-  @import '~@/assets/sass/variables.scss';
-
   .section {}
 
   .section__title {

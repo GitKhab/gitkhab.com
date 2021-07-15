@@ -16,8 +16,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/mixins.scss";
-
   .footer {}
 
   .footer__inner {

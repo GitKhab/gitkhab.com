@@ -20,7 +20,6 @@
 
 <style lang="scss">
   @import "~@/assets/fonts/roboto/roboto.css";
-  @import "~@/assets/sass/variables.scss";
 
   .html {
     height: 100%;

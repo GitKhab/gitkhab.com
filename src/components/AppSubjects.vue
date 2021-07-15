@@ -25,8 +25,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-
   .subjects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));

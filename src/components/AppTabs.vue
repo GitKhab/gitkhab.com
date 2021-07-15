@@ -35,9 +35,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-  @import "~@/assets/sass/mixins.scss";
-
   $tabs-border-radius: 8px;
 
   .tabs {}

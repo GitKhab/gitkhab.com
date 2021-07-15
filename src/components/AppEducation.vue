@@ -19,8 +19,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-
   .education {}
 
   .education__group {

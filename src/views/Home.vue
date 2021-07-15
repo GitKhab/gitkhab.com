@@ -56,9 +56,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-  @import "~@/assets/sass/mixins.scss";
-
   .home {
     background-image: url(~@/assets/svg/circuit-board.svg);
     background-position: 10px 10px;

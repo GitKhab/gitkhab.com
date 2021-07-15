@@ -1,10 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import VueMeta from 'vue-meta'
 import BaseLayout from '@/views/BaseLayout';
 import Home from '@/views/Home.vue';
 import Error404 from '@/views/NotFound';
 
 Vue.use(VueRouter);
+Vue.use(VueMeta);
 
 const routes = [
   {
@@ -14,19 +16,13 @@ const routes = [
       {
         path: '',
         name: Home,
-        component: Home,
-        meta: {
-          title: 'Резюме на позицию «junior frontend-разработчик»'
-        }
+        component: Home
       }
     ]
   },
   {
     path: '*',
-    component: Error404,
-    meta: {
-      title: 'Страница не найдена'
-    }
+    component: Error404
   }
 ];
 
@@ -37,7 +33,6 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title ? `${to.meta.title} ‒ GitKhab.com` : 'GitKhab.com';
   next();
 })
 

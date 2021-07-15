@@ -44,6 +44,13 @@
       AppEducation,
       AppPhoto,
       ThePageHeading
+    },
+    metaInfo: {
+      title: 'Резюме на позицию «frontend-разработчик»',
+      meta: [{
+        name: 'description',
+        content: 'Ищете в команду frontend-разработчика? Возможно, нашли.'
+      }]
     }
   }
 </script>

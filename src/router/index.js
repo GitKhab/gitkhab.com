@@ -1,10 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import VueMeta from 'vue-meta'
 import BaseLayout from '@/views/BaseLayout';
 import Home from '@/views/Home.vue';
 import Error404 from '@/views/NotFound';
 
 Vue.use(VueRouter);
+Vue.use(VueMeta);
 
 const routes = [
   {

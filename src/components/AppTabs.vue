@@ -56,7 +56,8 @@
     border: none;
     cursor: pointer;
     color: rgba(#000, 0.3);
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: $gray-dark;
     }
     &_active {

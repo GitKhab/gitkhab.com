@@ -25,9 +25,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-  @import "~@/assets/sass/mixins.scss";
-
   .chip {
     @include visual-state-transition;
     display: inline-flex;

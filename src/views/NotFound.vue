@@ -10,13 +10,14 @@
 
 <script>
   export default {
-    name: 'NotFound'
+    name: 'NotFound',
+    metaInfo: {
+      title: 'Страница не найдена'
+    }
   }
 </script>
 
 <style lang="scss" scoped>
-  @import "~@/assets/sass/variables.scss";
-  @import "~@/assets/sass/mixins.scss";
 
   .error {
     display: flex;

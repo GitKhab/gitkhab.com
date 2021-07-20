@@ -18,8 +18,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/mixins.scss";
-
   .header {}
 
   .header__inner {

@@ -35,9 +35,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-  @import "~@/assets/sass/mixins.scss";
-
   $tabs-border-radius: 8px;
 
   .tabs {}
@@ -59,7 +56,8 @@
     border: none;
     cursor: pointer;
     color: rgba(#000, 0.3);
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: $gray-dark;
     }
     &_active {

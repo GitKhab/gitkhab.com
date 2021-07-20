@@ -44,14 +44,18 @@
       AppEducation,
       AppPhoto,
       ThePageHeading
+    },
+    metaInfo: {
+      title: 'Резюме на позицию «frontend-разработчик»',
+      meta: [{
+        name: 'description',
+        content: 'Ищете в команду frontend-разработчика? Возможно, нашли.'
+      }]
     }
   }
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-  @import "~@/assets/sass/mixins.scss";
-
   .home {
     background-image: url(~@/assets/svg/circuit-board.svg);
     background-position: 10px 10px;

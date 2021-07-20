@@ -32,9 +32,6 @@
 </script>
 
 <style lang="scss">
-  @import "~@/assets/sass/variables.scss";
-  @import "~@/assets/sass/mixins.scss";
-
   .photo {
     @include square-ratio;
   }
